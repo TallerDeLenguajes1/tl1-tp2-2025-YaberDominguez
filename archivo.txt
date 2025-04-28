@@ -1,0 +1,5 @@
+2)
+f) No, no puedo ver el archivo porque estoy en la rama principal y no en la secundaria.
+    Noto que aparece el commit que realize en la otra rama pero con color distinto al de la rama principal.
+    Noto que el archivo esta conectado a la rama principal y no a la secundaria.
+    Noto que el archivo ahora esta conectado tanto con la rama principal asi como la secundaria y puedo ver tambien ahora el archio tp2_1_2.c
