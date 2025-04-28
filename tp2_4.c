@@ -59,6 +59,29 @@ void mostrarMasVieja(compu pcs[], int cantidad)
     }
 }
 
+void mostrarMasVeloz(compu pcs[], int cantidad){
+    int veloz = 1;
+    for (int i = 0; i < cantidad; i++)
+    {
+        if (pcs[i].velocidad > veloz)
+        {
+            veloz = pcs[i].velocidad;
+        }
+    }
+    for (int i = 0; i < cantidad; i++)
+    {
+        if (pcs[i].velocidad == veloz)
+        {
+            printf("--PC mas veloz--\n");
+            printf("Caracteristicas: \n");
+            printf("-Velocidad de procesamiento: %d GHz\n", pcs[i].velocidad);
+            printf("-Año de fabricacion: %d \n", pcs[i].anio);
+            printf("-Cantidad de nucleos: %d \n", pcs[i].cantidad_nucleos);
+            printf("-Tipo de procesador: %s \n", pcs[i].tipo_cpu);
+        }
+    }
+}
+
 int main()
 {
     char tipos[6][10] = {"Intel", "AMD", "Celeron", "Athlon", "Core",
@@ -74,4 +97,8 @@ int main()
         indice = generar_valores_aleatorios(0, 5);                           // Genero un indice aleatorio para hacer referencia al tipo de procesador segun el arreglo de caracteres tipos
         computadoras[i].tipo_cpu = tipos[indice];                            // genero un tipo de procesador aleatorio entre los 6 del arreglo tipo
     }
+    listarPCs(computadoras,tamanio);
+    mostrarMasVieja(computadoras,tamanio);
+    mostrarMasVeloz(computadoras,tamanio)
+
 }
