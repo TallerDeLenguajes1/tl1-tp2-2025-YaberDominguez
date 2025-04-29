@@ -99,6 +99,6 @@ int main()
     }
     listarPCs(computadoras,tamanio);
     mostrarMasVieja(computadoras,tamanio);
-    mostrarMasVeloz(computadoras,tamanio)
+    mostrarMasVeloz(computadoras,tamanio);
 
 }
